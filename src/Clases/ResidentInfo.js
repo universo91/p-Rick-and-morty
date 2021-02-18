@@ -9,11 +9,7 @@ function ResidentInfo({data}){
     const [episodesResident, setEpisodesResident] = useState(0);
 
     useEffect(()=>{
-        console.log("Info= ");
-        console.log(data); 
         if(data) {
-            console.log("Good");
-            console.log(data.name);
             setNameResident(data.name);
             setStatusResident(data.status);
             setImageResident(data.image);
@@ -31,15 +27,15 @@ function ResidentInfo({data}){
                 <div className="info">
                     <div className="nameAndStatus">
                         <h2>{nameResident}</h2>                   
-                        <span>{data.status}</span>
+                        <span>{statusResident}</span>
                     </div>
                     <div className="nameAndStatus">
                         <span>Lugar de origen</span>
-                        <h5>{data.origin.name}</h5>
+                        <h5>{originResident}</h5>
                     </div>
                     <div className="nameAndStatus">
                         <span>Episodios </span>
-                        <h5>{data.episode.length}</h5>
+                        <h5>{episodesResident}</h5>
                     </div>
                 </div>
             </div>           

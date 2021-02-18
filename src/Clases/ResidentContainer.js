@@ -22,10 +22,9 @@ function ResidentContainer({urlResidents}) {
         if(idResidents) {
             let x = [];
             if(idResidents.length !== 0 )
-            {
-                console.log(`resident=https://rickandmortyapi.com/api/character/${idResidents}`)
-            const promise = axios.get(`https://rickandmortyapi.com/api/character/${idResidents}`);
-            promise.then(response => {
+            {               
+                const promise = axios.get(`https://rickandmortyapi.com/api/character/${idResidents}`);
+                promise.then(response => {
                 if(response.data.length) {
                     setArrayResidents(response.data);
                 }  

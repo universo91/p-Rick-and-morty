@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ResidentContainer {
+    width: 100%;  
+    background-color: rgb(248, 249, 251);
+    display: flex;
+    justify-content: center;
+}
+
+.ContainerCards {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.containerLocation {  
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+.nameAndStatus h5, .nameAndStatus h2 + span {
+    color:rgb(255, 72, 0);
+    font-weight: 400;
+} 
+
+.infoLocation {
+   /* background-color: orange;*/
+    display: flex;
+    justify-content: space-around;
+}
+.lista {
+    color:rgb(255, 72, 0);
+    list-style: none;
+}
+
+.buton {
+    background-color: rgb(255, 72, 0);
+    border: none;
+    border-radius: 30px;
+}
+
+.lista h4 {
+    margin-bottom: 1px;
+    color: rgb(14, 13, 19);
+}
+
+.lista li {
+    margin-bottom: 1em;
+}
+
+.card {
+    border-radius: 10px;
+    width: 30%;
+    color:rgb(92, 89, 109);
+    overflow: hidden;
+    margin: 10px;
+    font-weight: 700;
+
+}
+.info .statusRes {
+    margin-bottom: 50px;
+}
+.info {
+    margin: 1.5em;
+    margin-top: 0; 
+    margin-bottom: 0;   
+}
+
+h2 {
+    margin-bottom: 0;
+}
+.nameAndStatus {
+    margin-bottom: .7em;
+}
+
+
+.searchBox {
+    position: relative;
+    bottom:100px;
+    left: 130px;
+}
+
+.title {
+    font-size: 8em;
+    background-color: rgb(214, 253, 240);
+    color: rgb(14, 13, 19);
+    text-align: center;
+}
